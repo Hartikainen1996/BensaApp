@@ -40,7 +40,7 @@ Matias Kohanevic 1800715
       <ion-label>Refuel price:</ion-label>
       <ion-input></ion-input>
     </ion-item>   
-      <ion-button ion-button expand="block" color="success">Calculate</ion-button>
+      <ion-button ion-button expand="block" color="success">Add entry</ion-button>
   </ion-list>
 
   <!-- Statistics -->
@@ -71,9 +71,8 @@ Matias Kohanevic 1800715
     <h2 class="ion-text-center">Entries</h2>
   </ion-text>
   <ion-list lines="none" inset="true">
-    <ion-item>
-    <ion-label>Date:</ion-label><p>15/04/2020</p>
-  </ion-item>
+    <ion-button class="accordion" expand="block">15/04/2020 +</ion-button>
+    <div class="panel">
     <ion-item>
     <ion-label>Driven kms:</ion-label><p>646,5km</p>
   </ion-item>
@@ -89,11 +88,11 @@ Matias Kohanevic 1800715
   <ion-item>
     <ion-label>€ / 100km:</ion-label><p>9,66€ / 100km</p>
   </ion-item>
+</div>
   </ion-list>
   <ion-list lines="none" inset="true">
-    <ion-item>
-    <ion-label>Date:</ion-label><p>17/04/2020</p>
-  </ion-item>
+    <ion-button class="accordion" expand="block">17/04/2020 +</ion-button>
+    <div class="panel">
     <ion-item>
     <ion-label>Driven kms:</ion-label><p>821,8km</p>
   </ion-item>
@@ -109,6 +108,7 @@ Matias Kohanevic 1800715
   <ion-item>
     <ion-label>€ / 100km:</ion-label><p>11,23€ / 100km</p>
   </ion-item>
+</div>
   </ion-list>
 </ion-list>
 </ion-content>
