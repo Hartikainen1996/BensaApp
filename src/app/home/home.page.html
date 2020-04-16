@@ -5,30 +5,38 @@ Matias Kohanevic 1800715
 -->
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <ion-title class="otsikko"> Gaszilla - Gas App </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="auth-form">
+<ion-content class="content">
+  <img src="/assets/auto.jpg" class="auto" alt="kuvake" />
+  <br>
+  <br>
+  <ion-title class="welcome"> Welcome! </ion-title>
   <ion-grid>
     <ion-row>
-      <ion-col align-self-center>
-        <h1>Gaszilla</h1>
-        <br />
-        <br />
+      <ion-col class="col">
+        <br/>
         <span class="already">Register here!</span>
+        <br>
         <ion-button
           [routerLink]="['/registration']"
           expand="block"
           color="primary"
-          >Register</ion-button
-        >
-        <br />
+          >Register</ion-button>
+        <br/>
         <span class="already">Already a user?</span>
-
-        <ion-button [routerLink]="['/login']" expand="block" color="danger"
-          >Sign In</ion-button
-        >
+        <br>
+        <ion-button 
+        [routerLink]="['/login']" 
+        expand="block" 
+        color="danger"
+          >Sign In</ion-button>
+          <br>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <div class="footer">
+© 2020 Gaszilla
+</div>
 </ion-content>
