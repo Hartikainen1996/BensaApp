@@ -13,8 +13,8 @@ const routes: Routes = [
         loadChildren: '../welcome/welcome.module#WelcomePageModule'
       },
       {
-        path: 'songs',
-        loadChildren: '../songs/songs.module#SongsPageModule'
+        path: 'bensaApp',
+        loadChildren: '../bensa-app/bensa-app.module#BensaAppPageModule' 
       },
       {
         path: 'about',
