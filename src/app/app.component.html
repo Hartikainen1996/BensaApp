@@ -14,22 +14,28 @@
     >
       <ion-header>
         <ion-toolbar>
-          <ion-title>Gaszilla</ion-title>
+          <ion-title> Gaszilla - Gas App </ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content>
+      <ion-content class="content">
         <ion-list>
           <ion-menu-toggle>
             <ion-button
               type="submit"
               (click)="authService.SignOut()"
               expand="block"
-              >Logout</ion-button
-            >
+              color="danger"
+              >Logout</ion-button>
+              <br>
             <ion-button ion-button menuClose expand="block"
               >Close Menu</ion-button
             >
           </ion-menu-toggle>
+          <br>
+          <br>
+          <div class="footer">
+            © 2020 Gaszilla
+            </div>
         </ion-list>
       </ion-content>
     </ion-menu>
