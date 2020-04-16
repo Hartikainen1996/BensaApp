@@ -13,5 +13,89 @@ Matias Kohanevic 1800715
 </ion-header>
 
 <ion-content>
-  <p>content maaan</p>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Fuel comsuption</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Insert data to get stats about your fuel consuption.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <!-- Input fields -->
+  <ion-list lines="full">
+    <ion-text color="primary">
+      <h2 class="ion-text-center">Add new entry:</h2>
+    </ion-text>
+    <ion-item>
+      <ion-label>Driven Kilometers:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Refuel amount:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Refuel price:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>   
+      <ion-button ion-button expand="block" color="success">Calculate</ion-button>
+  </ion-list>
+
+  <!-- Statistics -->
+<ion-list>
+  <ion-text color="primary">
+    <h2 class="ion-text-center">Statistics</h2>
+  </ion-text>
+  <ion-item>
+    <ion-label>l / 100km:</ion-label><p>6,7l / 100km</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>€ / 100km:</ion-label><p>9,78€ / 100km</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>All time l / 100km:</ion-label><p>7,1l / 100km</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>All time € / 100km:</ion-label><p>10,00€ / 100km</p>
+  </ion-item>
+</ion-list>
+
+<!-- Entries -->
+<ion-list>
+  <ion-text color="primary">
+    <h2 class="ion-text-center">Entries</h2>
+  </ion-text>
+  <ion-list lines="none" inset="true">
+    <ion-item>
+    <ion-label>Date:</ion-label><p>15/04/2020</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Driven kms:</ion-label><p>646,5km</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Refuel amount:</ion-label><p>49,79l</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Refuel price:</ion-label><p>69,55€</p>
+  </ion-item>
+  </ion-list>
+  <ion-list lines="none" inset="true">
+    <ion-item>
+    <ion-label>Date:</ion-label><p>17/04/2020</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Driven kms:</ion-label><p>821,8km</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Refuel amount:</ion-label><p>60,53l</p>
+  </ion-item>
+    <ion-item>
+    <ion-label>Refuel price:</ion-label><p>97,98€</p>
+  </ion-item>
+  </ion-list>
+</ion-list>
 </ion-content>
+
+
